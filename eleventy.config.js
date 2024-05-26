@@ -5,8 +5,6 @@ export default function (config) {
 	config.addExtension("teddy", {
 		compile: async function (inputContent) {
 			return async (dataCascade) => teddy.render(inputContent, dataCascade);
-			// const outputTemplate = teddy.compile(inputContent);
-			// return async (dataCascade) => outputTemplate(dataCascade);
 		}
 	})
 }

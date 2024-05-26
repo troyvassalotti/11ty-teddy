@@ -7,7 +7,13 @@
 	</head>
 	<body>
 		{! this is a teddy comment !}
-		<p>Hello {site.name}</p>
+		<h1>Hello {site.name}</h1>
+		<h2>Bands</h2>
+		<ul>
+			<loop through="site.bands" val="band">
+				<li><b>{band.name}</b>: {band.city}</li>
+			</loop>
+		</ul>
 	</body>
 </html>
 
